@@ -22,6 +22,10 @@
 		427F206B20C6416600F511B0 /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F206A20C6416600F511B0 /* Goods.m */; };
 		427F206E20C6417300F511B0 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F206D20C6417300F511B0 /* Color.m */; };
 		427F207320C65F2200F511B0 /* NullFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F207220C65F2200F511B0 /* NullFamily.m */; };
+		429D334120C7C00B006EA211 /* StaticAndExternManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334020C7C00B006EA211 /* StaticAndExternManager.m */; };
+		429D334420C7C91B006EA211 /* DefineAndTypedefManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334320C7C91B006EA211 /* DefineAndTypedefManager.m */; };
+		429D334920C7DEAB006EA211 /* ConstManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334820C7DEAB006EA211 /* ConstManager.m */; };
+		429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334B20C7E5CB006EA211 /* VariabelManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,14 @@
 		427F206D20C6417300F511B0 /* Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		427F207120C65F2200F511B0 /* NullFamily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NullFamily.h; sourceTree = "<group>"; };
 		427F207220C65F2200F511B0 /* NullFamily.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NullFamily.m; sourceTree = "<group>"; };
+		429D333F20C7C00B006EA211 /* StaticAndExternManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticAndExternManager.h; sourceTree = "<group>"; };
+		429D334020C7C00B006EA211 /* StaticAndExternManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticAndExternManager.m; sourceTree = "<group>"; };
+		429D334220C7C91B006EA211 /* DefineAndTypedefManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineAndTypedefManager.h; sourceTree = "<group>"; };
+		429D334320C7C91B006EA211 /* DefineAndTypedefManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineAndTypedefManager.m; sourceTree = "<group>"; };
+		429D334720C7DEAB006EA211 /* ConstManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstManager.h; sourceTree = "<group>"; };
+		429D334820C7DEAB006EA211 /* ConstManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstManager.m; sourceTree = "<group>"; };
+		429D334A20C7E5CB006EA211 /* VariabelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariabelManager.h; sourceTree = "<group>"; };
+		429D334B20C7E5CB006EA211 /* VariabelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariabelManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,11 @@
 				427F206820C640DF00F511B0 /* 2_泛型的协变和逆变 */,
 				427F206F20C65E3900F511B0 /* 3_kind_of测试 */,
 				427F207020C65EBA00F511B0 /* 4_null族关键字 */,
+				429D333C20C7BED3006EA211 /* 5_static和extern */,
+				429D333D20C7BF10006EA211 /* 6_define和typedef */,
+				429D333E20C7BF3B006EA211 /* 7_const关键字 */,
+				429D334620C7D4A3006EA211 /* 8_变量 */,
+				429D334520C7D45F006EA211 /* 9_copy关键字 */,
 				427F202F20C61D7000F511B0 /* Main.storyboard */,
 				427F203220C61D7200F511B0 /* Assets.xcassets */,
 				427F203420C61D7200F511B0 /* LaunchScreen.storyboard */,
@@ -197,6 +214,49 @@
 				427F207220C65F2200F511B0 /* NullFamily.m */,
 			);
 			path = "4_null族关键字";
+			sourceTree = "<group>";
+		};
+		429D333C20C7BED3006EA211 /* 5_static和extern */ = {
+			isa = PBXGroup;
+			children = (
+				429D333F20C7C00B006EA211 /* StaticAndExternManager.h */,
+				429D334020C7C00B006EA211 /* StaticAndExternManager.m */,
+			);
+			path = "5_static和extern";
+			sourceTree = "<group>";
+		};
+		429D333D20C7BF10006EA211 /* 6_define和typedef */ = {
+			isa = PBXGroup;
+			children = (
+				429D334220C7C91B006EA211 /* DefineAndTypedefManager.h */,
+				429D334320C7C91B006EA211 /* DefineAndTypedefManager.m */,
+			);
+			path = "6_define和typedef";
+			sourceTree = "<group>";
+		};
+		429D333E20C7BF3B006EA211 /* 7_const关键字 */ = {
+			isa = PBXGroup;
+			children = (
+				429D334720C7DEAB006EA211 /* ConstManager.h */,
+				429D334820C7DEAB006EA211 /* ConstManager.m */,
+			);
+			path = "7_const关键字";
+			sourceTree = "<group>";
+		};
+		429D334520C7D45F006EA211 /* 9_copy关键字 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "9_copy关键字";
+			sourceTree = "<group>";
+		};
+		429D334620C7D4A3006EA211 /* 8_变量 */ = {
+			isa = PBXGroup;
+			children = (
+				429D334A20C7E5CB006EA211 /* VariabelManager.h */,
+				429D334B20C7E5CB006EA211 /* VariabelManager.m */,
+			);
+			path = "8_变量";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,12 +392,16 @@
 				427F202E20C61D7000F511B0 /* ViewController.m in Sources */,
 				427F205D20C6281100F511B0 /* Language.m in Sources */,
 				427F207320C65F2200F511B0 /* NullFamily.m in Sources */,
+				429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */,
 				427F206020C6288800F511B0 /* Person.m in Sources */,
 				427F206E20C6417300F511B0 /* Color.m in Sources */,
 				427F206320C637C800F511B0 /* Animal.m in Sources */,
 				427F203920C61D7200F511B0 /* main.m in Sources */,
 				427F202B20C61D7000F511B0 /* AppDelegate.m in Sources */,
 				427F206B20C6416600F511B0 /* Goods.m in Sources */,
+				429D334120C7C00B006EA211 /* StaticAndExternManager.m in Sources */,
+				429D334920C7DEAB006EA211 /* ConstManager.m in Sources */,
+				429D334420C7C91B006EA211 /* DefineAndTypedefManager.m in Sources */,
 				427F206620C63D4500F511B0 /* Zoo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
