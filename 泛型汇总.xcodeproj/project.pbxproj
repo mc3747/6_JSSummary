@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42596AF920C9080D00A26828 /* Persons.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596AF820C9080D00A26828 /* Persons.m */; };
+		42596AFC20C9082800A26828 /* InstanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596AFB20C9082800A26828 /* InstanceManager.m */; };
+		42596B0020C90B3E00A26828 /* Person1.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596AFF20C90B3E00A26828 /* Person1.m */; };
+		42596B0420C90CF600A26828 /* SelfAndSuperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596B0320C90CF600A26828 /* SelfAndSuperManager.m */; };
+		42596B0820C90FAF00A26828 /* DescriptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596B0720C90FAF00A26828 /* DescriptionManager.m */; };
+		42596B0B20C90FBF00A26828 /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596B0A20C90FBF00A26828 /* Person2.m */; };
 		427F202B20C61D7000F511B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F202A20C61D7000F511B0 /* AppDelegate.m */; };
 		427F202E20C61D7000F511B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F202D20C61D7000F511B0 /* ViewController.m */; };
 		427F203120C61D7000F511B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427F202F20C61D7000F511B0 /* Main.storyboard */; };
@@ -46,6 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42596AF720C9080D00A26828 /* Persons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persons.h; sourceTree = "<group>"; };
+		42596AF820C9080D00A26828 /* Persons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persons.m; sourceTree = "<group>"; };
+		42596AFA20C9082800A26828 /* InstanceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstanceManager.h; sourceTree = "<group>"; };
+		42596AFB20C9082800A26828 /* InstanceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstanceManager.m; sourceTree = "<group>"; };
+		42596AFE20C90B3E00A26828 /* Person1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person1.h; sourceTree = "<group>"; };
+		42596AFF20C90B3E00A26828 /* Person1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person1.m; sourceTree = "<group>"; };
+		42596B0220C90CF600A26828 /* SelfAndSuperManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfAndSuperManager.h; sourceTree = "<group>"; };
+		42596B0320C90CF600A26828 /* SelfAndSuperManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfAndSuperManager.m; sourceTree = "<group>"; };
+		42596B0620C90FAF00A26828 /* DescriptionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescriptionManager.h; sourceTree = "<group>"; };
+		42596B0720C90FAF00A26828 /* DescriptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescriptionManager.m; sourceTree = "<group>"; };
+		42596B0920C90FBF00A26828 /* Person2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
+		42596B0A20C90FBF00A26828 /* Person2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
 		427F202620C61D7000F511B0 /* 泛型汇总.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "泛型汇总.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F202920C61D7000F511B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		427F202A20C61D7000F511B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +129,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42596AF620C9076E00A26828 /* 9_访问成员变量的方式 */ = {
+			isa = PBXGroup;
+			children = (
+				42596AFA20C9082800A26828 /* InstanceManager.h */,
+				42596AFB20C9082800A26828 /* InstanceManager.m */,
+				42596AF720C9080D00A26828 /* Persons.h */,
+				42596AF820C9080D00A26828 /* Persons.m */,
+			);
+			path = "9_访问成员变量的方式";
+			sourceTree = "<group>";
+		};
+		42596AFD20C90B0800A26828 /* 10_成员变量修饰符 */ = {
+			isa = PBXGroup;
+			children = (
+				42596AFE20C90B3E00A26828 /* Person1.h */,
+				42596AFF20C90B3E00A26828 /* Person1.m */,
+			);
+			path = "10_成员变量修饰符";
+			sourceTree = "<group>";
+		};
+		42596B0120C90CD100A26828 /* 11_self和super关键字 */ = {
+			isa = PBXGroup;
+			children = (
+				42596B0220C90CF600A26828 /* SelfAndSuperManager.h */,
+				42596B0320C90CF600A26828 /* SelfAndSuperManager.m */,
+			);
+			path = "11_self和super关键字";
+			sourceTree = "<group>";
+		};
+		42596B0520C90F1700A26828 /* 12_description方法 */ = {
+			isa = PBXGroup;
+			children = (
+				42596B0620C90FAF00A26828 /* DescriptionManager.h */,
+				42596B0720C90FAF00A26828 /* DescriptionManager.m */,
+				42596B0920C90FBF00A26828 /* Person2.h */,
+				42596B0A20C90FBF00A26828 /* Person2.m */,
+			);
+			path = "12_description方法";
+			sourceTree = "<group>";
+		};
 		427F201D20C61D7000F511B0 = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +204,11 @@
 				429D333D20C7BF10006EA211 /* 6_define和typedef */,
 				429D333E20C7BF3B006EA211 /* 7_const关键字 */,
 				429D334620C7D4A3006EA211 /* 8_变量 */,
-				429D334520C7D45F006EA211 /* 9_copy关键字 */,
+				42596AF620C9076E00A26828 /* 9_访问成员变量的方式 */,
+				42596AFD20C90B0800A26828 /* 10_成员变量修饰符 */,
+				42596B0120C90CD100A26828 /* 11_self和super关键字 */,
+				42596B0520C90F1700A26828 /* 12_description方法 */,
+				429D334520C7D45F006EA211 /* copy关键字 */,
 				427F202F20C61D7000F511B0 /* Main.storyboard */,
 				427F203220C61D7200F511B0 /* Assets.xcassets */,
 				427F203420C61D7200F511B0 /* LaunchScreen.storyboard */,
@@ -243,11 +305,11 @@
 			path = "7_const关键字";
 			sourceTree = "<group>";
 		};
-		429D334520C7D45F006EA211 /* 9_copy关键字 */ = {
+		429D334520C7D45F006EA211 /* copy关键字 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "9_copy关键字";
+			path = "copy关键字";
 			sourceTree = "<group>";
 		};
 		429D334620C7D4A3006EA211 /* 8_变量 */ = {
@@ -394,13 +456,19 @@
 				427F207320C65F2200F511B0 /* NullFamily.m in Sources */,
 				429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */,
 				427F206020C6288800F511B0 /* Person.m in Sources */,
+				42596B0B20C90FBF00A26828 /* Person2.m in Sources */,
 				427F206E20C6417300F511B0 /* Color.m in Sources */,
 				427F206320C637C800F511B0 /* Animal.m in Sources */,
 				427F203920C61D7200F511B0 /* main.m in Sources */,
+				42596B0020C90B3E00A26828 /* Person1.m in Sources */,
+				42596B0420C90CF600A26828 /* SelfAndSuperManager.m in Sources */,
 				427F202B20C61D7000F511B0 /* AppDelegate.m in Sources */,
 				427F206B20C6416600F511B0 /* Goods.m in Sources */,
 				429D334120C7C00B006EA211 /* StaticAndExternManager.m in Sources */,
 				429D334920C7DEAB006EA211 /* ConstManager.m in Sources */,
+				42596AFC20C9082800A26828 /* InstanceManager.m in Sources */,
+				42596AF920C9080D00A26828 /* Persons.m in Sources */,
+				42596B0820C90FAF00A26828 /* DescriptionManager.m in Sources */,
 				429D334420C7C91B006EA211 /* DefineAndTypedefManager.m in Sources */,
 				427F206620C63D4500F511B0 /* Zoo.m in Sources */,
 			);

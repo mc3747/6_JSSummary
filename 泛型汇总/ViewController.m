@@ -14,6 +14,7 @@
 #import "Goods.h"
 #import "Color.h"
 #import "NullFamily.h"
+#import "DescriptionManager.h"
 
 @interface ViewController ()
 //正常的数组
@@ -26,6 +27,7 @@
 //泛型的字典
 @property (nonatomic, strong) NSMutableDictionary<NSString *,NSString *> *dataDic2;
 
+@property (weak, nonatomic) IBOutlet UIButton *testBtn1;
 
 @end
 
@@ -33,7 +35,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [_testBtn1 addTarget:self action:@selector(test1) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)test1 {
+    [DescriptionManager test];
 }
 
 #pragma mark -  数组的泛型
