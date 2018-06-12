@@ -35,6 +35,8 @@
 		427F206B20C6416600F511B0 /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F206A20C6416600F511B0 /* Goods.m */; };
 		427F206E20C6417300F511B0 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F206D20C6417300F511B0 /* Color.m */; };
 		427F207320C65F2200F511B0 /* NullFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F207220C65F2200F511B0 /* NullFamily.m */; };
+		427FE7A420CF9D9E00E9D97E /* CategoryAndExtensionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FE7A320CF9D9E00E9D97E /* CategoryAndExtensionManager.m */; };
+		427FE7A720CF9FA300E9D97E /* BlockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 427FE7A620CF9FA300E9D97E /* BlockManager.m */; };
 		429D334120C7C00B006EA211 /* StaticAndExternManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334020C7C00B006EA211 /* StaticAndExternManager.m */; };
 		429D334420C7C91B006EA211 /* DefineAndTypedefManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334320C7C91B006EA211 /* DefineAndTypedefManager.m */; };
 		429D334920C7DEAB006EA211 /* ConstManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334820C7DEAB006EA211 /* ConstManager.m */; };
@@ -115,6 +117,10 @@
 		427F206D20C6417300F511B0 /* Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		427F207120C65F2200F511B0 /* NullFamily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NullFamily.h; sourceTree = "<group>"; };
 		427F207220C65F2200F511B0 /* NullFamily.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NullFamily.m; sourceTree = "<group>"; };
+		427FE7A220CF9D9E00E9D97E /* CategoryAndExtensionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryAndExtensionManager.h; sourceTree = "<group>"; };
+		427FE7A320CF9D9E00E9D97E /* CategoryAndExtensionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryAndExtensionManager.m; sourceTree = "<group>"; };
+		427FE7A520CF9FA300E9D97E /* BlockManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockManager.h; sourceTree = "<group>"; };
+		427FE7A620CF9FA300E9D97E /* BlockManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockManager.m; sourceTree = "<group>"; };
 		429D333F20C7C00B006EA211 /* StaticAndExternManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticAndExternManager.h; sourceTree = "<group>"; };
 		429D334020C7C00B006EA211 /* StaticAndExternManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticAndExternManager.m; sourceTree = "<group>"; };
 		429D334220C7C91B006EA211 /* DefineAndTypedefManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineAndTypedefManager.h; sourceTree = "<group>"; };
@@ -299,6 +305,8 @@
 				426FB1B520CA62A600B2B747 /* 17_SEL关键字 */,
 				426FB1B920CA658600B2B747 /* 18_new和alloc关键字 */,
 				426FB1BD20CA66C700B2B747 /* 19_野指针和空指针 */,
+				427FE7A020CF9D5B00E9D97E /* 20_分类和扩展 */,
+				427FE7A120CF9D6D00E9D97E /* 21_Block关键字 */,
 				429D334520C7D45F006EA211 /* copy关键字 */,
 				427F202F20C61D7000F511B0 /* Main.storyboard */,
 				427F203220C61D7200F511B0 /* Assets.xcassets */,
@@ -367,6 +375,24 @@
 				427F207220C65F2200F511B0 /* NullFamily.m */,
 			);
 			path = "4_null族关键字";
+			sourceTree = "<group>";
+		};
+		427FE7A020CF9D5B00E9D97E /* 20_分类和扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				427FE7A220CF9D9E00E9D97E /* CategoryAndExtensionManager.h */,
+				427FE7A320CF9D9E00E9D97E /* CategoryAndExtensionManager.m */,
+			);
+			path = "20_分类和扩展";
+			sourceTree = "<group>";
+		};
+		427FE7A120CF9D6D00E9D97E /* 21_Block关键字 */ = {
+			isa = PBXGroup;
+			children = (
+				427FE7A520CF9FA300E9D97E /* BlockManager.h */,
+				427FE7A620CF9FA300E9D97E /* BlockManager.m */,
+			);
+			path = "21_Block关键字";
 			sourceTree = "<group>";
 		};
 		429D333C20C7BED3006EA211 /* 5_static和extern */ = {
@@ -547,6 +573,7 @@
 				427F207320C65F2200F511B0 /* NullFamily.m in Sources */,
 				429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */,
 				426FB1BC20CA65AF00B2B747 /* NewAndAllocManager.m in Sources */,
+				427FE7A420CF9D9E00E9D97E /* CategoryAndExtensionManager.m in Sources */,
 				427F206020C6288800F511B0 /* Person.m in Sources */,
 				42596B0B20C90FBF00A26828 /* Person2.m in Sources */,
 				426FB1B020CA606700B2B747 /* IdAndInstancetypeManager.m in Sources */,
@@ -560,6 +587,7 @@
 				426FB1C020CA66F500B2B747 /* PointerManager.m in Sources */,
 				426FB1B820CA62BE00B2B747 /* SelManager.m in Sources */,
 				427F206B20C6416600F511B0 /* Goods.m in Sources */,
+				427FE7A720CF9FA300E9D97E /* BlockManager.m in Sources */,
 				429D334120C7C00B006EA211 /* StaticAndExternManager.m in Sources */,
 				426FB1AC20CA37A900B2B747 /* PropertyManager.m in Sources */,
 				429D334920C7DEAB006EA211 /* ConstManager.m in Sources */,
