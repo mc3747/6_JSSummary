@@ -41,6 +41,7 @@
 		429D334420C7C91B006EA211 /* DefineAndTypedefManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334320C7C91B006EA211 /* DefineAndTypedefManager.m */; };
 		429D334920C7DEAB006EA211 /* ConstManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334820C7DEAB006EA211 /* ConstManager.m */; };
 		429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334B20C7E5CB006EA211 /* VariabelManager.m */; };
+		42DB02EC221E46B0002B5675 /* KeywordDecorateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02EB221E46B0002B5675 /* KeywordDecorateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		429D334820C7DEAB006EA211 /* ConstManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstManager.m; sourceTree = "<group>"; };
 		429D334A20C7E5CB006EA211 /* VariabelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariabelManager.h; sourceTree = "<group>"; };
 		429D334B20C7E5CB006EA211 /* VariabelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariabelManager.m; sourceTree = "<group>"; };
+		42DB02EA221E46B0002B5675 /* KeywordDecorateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeywordDecorateView.h; sourceTree = "<group>"; };
+		42DB02EB221E46B0002B5675 /* KeywordDecorateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeywordDecorateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,7 @@
 				426FB1BD20CA66C700B2B747 /* 19_野指针和空指针 */,
 				427FE7A020CF9D5B00E9D97E /* 20_分类和扩展 */,
 				427FE7A120CF9D6D00E9D97E /* 21_Block关键字 */,
+				42DB02E9221E4514002B5675 /* 22_ NS_UNAVAILABLE和NS_DESIGNATED_INITIALIZER */,
 				429D334520C7D45F006EA211 /* copy关键字 */,
 				427F202F20C61D7000F511B0 /* Main.storyboard */,
 				427F203220C61D7200F511B0 /* Assets.xcassets */,
@@ -436,6 +440,15 @@
 				429D334B20C7E5CB006EA211 /* VariabelManager.m */,
 			);
 			path = "8_变量";
+			sourceTree = "<group>";
+		};
+		42DB02E9221E4514002B5675 /* 22_ NS_UNAVAILABLE和NS_DESIGNATED_INITIALIZER */ = {
+			isa = PBXGroup;
+			children = (
+				42DB02EA221E46B0002B5675 /* KeywordDecorateView.h */,
+				42DB02EB221E46B0002B5675 /* KeywordDecorateView.m */,
+			);
+			path = "22_ NS_UNAVAILABLE和NS_DESIGNATED_INITIALIZER";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +588,7 @@
 				426FB1BC20CA65AF00B2B747 /* NewAndAllocManager.m in Sources */,
 				427FE7A420CF9D9E00E9D97E /* CategoryAndExtensionManager.m in Sources */,
 				427F206020C6288800F511B0 /* Person.m in Sources */,
+				42DB02EC221E46B0002B5675 /* KeywordDecorateView.m in Sources */,
 				42596B0B20C90FBF00A26828 /* Person2.m in Sources */,
 				426FB1B020CA606700B2B747 /* IdAndInstancetypeManager.m in Sources */,
 				427F206E20C6417300F511B0 /* Color.m in Sources */,
@@ -766,6 +780,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQBF47L68X;
 				INFOPLIST_FILE = "泛型汇总/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -782,6 +797,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQBF47L68X;
 				INFOPLIST_FILE = "泛型汇总/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

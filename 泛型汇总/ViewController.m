@@ -19,11 +19,13 @@
 @interface ViewController ()
 //正常的数组
 @property (nonatomic, strong) NSMutableArray *dataArray1;
+
 //泛型的数组
 @property (nonatomic, strong) NSMutableArray<NSString *> *dataArray2;
 
 //正常的字典
 @property (nonatomic, strong) NSMutableDictionary *dataDic1;
+
 //泛型的字典
 @property (nonatomic, strong) NSMutableDictionary<NSString *,NSString *> *dataDic2;
 
@@ -119,4 +121,6 @@
     nullFamily.number = nil;
     NSLog(@"%@",nullFamily.number);
 }
+
+
 @end
