@@ -13,6 +13,7 @@
 		42596B0420C90CF600A26828 /* SelfAndSuperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596B0320C90CF600A26828 /* SelfAndSuperManager.m */; };
 		42596B0820C90FAF00A26828 /* DescriptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596B0720C90FAF00A26828 /* DescriptionManager.m */; };
 		42596B0B20C90FBF00A26828 /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42596B0A20C90FBF00A26828 /* Person2.m */; };
+		4269D58D226C0DA1007E7CA2 /* MathFormulaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4269D58C226C0DA1007E7CA2 /* MathFormulaManager.m */; };
 		426FB1A820CA364E00B2B747 /* SynthesizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FB1A720CA364E00B2B747 /* SynthesizeManager.m */; };
 		426FB1AC20CA37A900B2B747 /* PropertyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FB1AB20CA37A900B2B747 /* PropertyManager.m */; };
 		426FB1B020CA606700B2B747 /* IdAndInstancetypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FB1AF20CA606700B2B747 /* IdAndInstancetypeManager.m */; };
@@ -74,6 +75,8 @@
 		42596B0720C90FAF00A26828 /* DescriptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescriptionManager.m; sourceTree = "<group>"; };
 		42596B0920C90FBF00A26828 /* Person2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
 		42596B0A20C90FBF00A26828 /* Person2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
+		4269D58B226C0DA1007E7CA2 /* MathFormulaManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathFormulaManager.h; sourceTree = "<group>"; };
+		4269D58C226C0DA1007E7CA2 /* MathFormulaManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathFormulaManager.m; sourceTree = "<group>"; };
 		426FB1A620CA364E00B2B747 /* SynthesizeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthesizeManager.h; sourceTree = "<group>"; };
 		426FB1A720CA364E00B2B747 /* SynthesizeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynthesizeManager.m; sourceTree = "<group>"; };
 		426FB1AA20CA37A900B2B747 /* PropertyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyManager.h; sourceTree = "<group>"; };
@@ -199,6 +202,15 @@
 			path = "12_description方法";
 			sourceTree = "<group>";
 		};
+		4269D58A226C0CF2007E7CA2 /* 24_abs,fabs,rounds等数学公式 */ = {
+			isa = PBXGroup;
+			children = (
+				4269D58B226C0DA1007E7CA2 /* MathFormulaManager.h */,
+				4269D58C226C0DA1007E7CA2 /* MathFormulaManager.m */,
+			);
+			path = "24_abs,fabs,rounds等数学公式";
+			sourceTree = "<group>";
+		};
 		426FB1A520CA359900B2B747 /* 13_synthesize关键字 */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +324,7 @@
 				427FE7A120CF9D6D00E9D97E /* 21_Block关键字 */,
 				42DB02E9221E4514002B5675 /* 22_ NS_UNAVAILABLE和NS_DESIGNATED_INITIALIZER */,
 				429D334520C7D45F006EA211 /* copy关键字 */,
+				4269D58A226C0CF2007E7CA2 /* 24_abs,fabs,rounds等数学公式 */,
 				427F202F20C61D7000F511B0 /* Main.storyboard */,
 				427F203220C61D7200F511B0 /* Assets.xcassets */,
 				427F203420C61D7200F511B0 /* LaunchScreen.storyboard */,
@@ -584,6 +597,7 @@
 				427F202E20C61D7000F511B0 /* ViewController.m in Sources */,
 				427F205D20C6281100F511B0 /* Language.m in Sources */,
 				427F207320C65F2200F511B0 /* NullFamily.m in Sources */,
+				4269D58D226C0DA1007E7CA2 /* MathFormulaManager.m in Sources */,
 				429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */,
 				426FB1BC20CA65AF00B2B747 /* NewAndAllocManager.m in Sources */,
 				427FE7A420CF9D9E00E9D97E /* CategoryAndExtensionManager.m in Sources */,
