@@ -26,6 +26,7 @@
         int const num = 10;
         const int num = 10;
     3，常用的应用场合：多次使用的内部全局常量（优于宏的使用：1，开辟的存储空间；2，不可修改性；3，更新维护方便）
-        int const static num = 10;
+        static int const num = 10;
+        static NSString * const BASE_URL  =  @"“;
  */
 @end

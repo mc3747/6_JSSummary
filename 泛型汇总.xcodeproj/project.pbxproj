@@ -42,6 +42,7 @@
 		429D334420C7C91B006EA211 /* DefineAndTypedefManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334320C7C91B006EA211 /* DefineAndTypedefManager.m */; };
 		429D334920C7DEAB006EA211 /* ConstManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334820C7DEAB006EA211 /* ConstManager.m */; };
 		429D334C20C7E5CB006EA211 /* VariabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 429D334B20C7E5CB006EA211 /* VariabelManager.m */; };
+		42D1C76A22783377001F170F /* XcodeAssertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C76922783377001F170F /* XcodeAssertManager.m */; };
 		42DB02EC221E46B0002B5675 /* KeywordDecorateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02EB221E46B0002B5675 /* KeywordDecorateView.m */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +134,8 @@
 		429D334820C7DEAB006EA211 /* ConstManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstManager.m; sourceTree = "<group>"; };
 		429D334A20C7E5CB006EA211 /* VariabelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariabelManager.h; sourceTree = "<group>"; };
 		429D334B20C7E5CB006EA211 /* VariabelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariabelManager.m; sourceTree = "<group>"; };
+		42D1C76822783377001F170F /* XcodeAssertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeAssertManager.h; sourceTree = "<group>"; };
+		42D1C76922783377001F170F /* XcodeAssertManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeAssertManager.m; sourceTree = "<group>"; };
 		42DB02EA221E46B0002B5675 /* KeywordDecorateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeywordDecorateView.h; sourceTree = "<group>"; };
 		42DB02EB221E46B0002B5675 /* KeywordDecorateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeywordDecorateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,8 +326,9 @@
 				427FE7A020CF9D5B00E9D97E /* 20_分类和扩展 */,
 				427FE7A120CF9D6D00E9D97E /* 21_Block关键字 */,
 				42DB02E9221E4514002B5675 /* 22_ NS_UNAVAILABLE和NS_DESIGNATED_INITIALIZER */,
-				429D334520C7D45F006EA211 /* copy关键字 */,
+				429D334520C7D45F006EA211 /* 23_copy关键字 */,
 				4269D58A226C0CF2007E7CA2 /* 24_abs,fabs,rounds等数学公式 */,
+				42D1C767227832FE001F170F /* 25_单元测试常用断言 */,
 				427F202F20C61D7000F511B0 /* Main.storyboard */,
 				427F203220C61D7200F511B0 /* Assets.xcassets */,
 				427F203420C61D7200F511B0 /* LaunchScreen.storyboard */,
@@ -439,11 +443,11 @@
 			path = "7_const关键字";
 			sourceTree = "<group>";
 		};
-		429D334520C7D45F006EA211 /* copy关键字 */ = {
+		429D334520C7D45F006EA211 /* 23_copy关键字 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "copy关键字";
+			path = "23_copy关键字";
 			sourceTree = "<group>";
 		};
 		429D334620C7D4A3006EA211 /* 8_变量 */ = {
@@ -453,6 +457,15 @@
 				429D334B20C7E5CB006EA211 /* VariabelManager.m */,
 			);
 			path = "8_变量";
+			sourceTree = "<group>";
+		};
+		42D1C767227832FE001F170F /* 25_单元测试常用断言 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C76822783377001F170F /* XcodeAssertManager.h */,
+				42D1C76922783377001F170F /* XcodeAssertManager.m */,
+			);
+			path = "25_单元测试常用断言";
 			sourceTree = "<group>";
 		};
 		42DB02E9221E4514002B5675 /* 22_ NS_UNAVAILABLE和NS_DESIGNATED_INITIALIZER */ = {
@@ -609,6 +622,7 @@
 				427F206320C637C800F511B0 /* Animal.m in Sources */,
 				427F203920C61D7200F511B0 /* main.m in Sources */,
 				426FB1B420CA624F00B2B747 /* ClassManager.m in Sources */,
+				42D1C76A22783377001F170F /* XcodeAssertManager.m in Sources */,
 				42596B0020C90B3E00A26828 /* Person1.m in Sources */,
 				42596B0420C90CF600A26828 /* SelfAndSuperManager.m in Sources */,
 				427F202B20C61D7000F511B0 /* AppDelegate.m in Sources */,
