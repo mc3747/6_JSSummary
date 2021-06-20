@@ -1,0 +1,18 @@
+1. C语言基础（小码哥）
+2. 未涉及的C语言补充
+3. C语言数据结构
+4. C语言算法（xcode实现）
+5. lmj的开源的算法小工具
+6. 几种语言对比
+8. 公众号：5分钟学算法（java语言）
+9. 公众号：人魔七七：OC学算法
+9. app：算法动画
+10. app：数据结构和算法
+11. 书籍：大话数据结构
+12. 书籍：数据结构和算法（严蔚敏）
+13. 视频：移动硬盘，网易云课堂
+14，陈皓的c++算法：https://github.com/haoel/leetcode
+15，王铮的数据结构和算法：https://github.com/wangzheng0822/algo
+16，动画呈现LeetCode（java代码）：https://github.com/MisterBooo/LeetCodeAnimation
+17，数据结构算法+简历（几种语言）：https://github.com/apachecn/Interview
+18，python的数据结构和算法：https://github.com/HuberTRoy/leetCode/blob/master/README.md?from=singlemessage&isappinstalled=0

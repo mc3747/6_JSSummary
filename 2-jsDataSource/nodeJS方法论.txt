@@ -1,0 +1,5 @@
+学习的大例子：
+1，基于 node.js + Mongodb 构建的后台系统：https://github.com/bailicangdu/node-elm
+2，网易云音乐 Node.js API service：https://github.com/Binaryify/NeteaseCloudMusicApi
+3，使用 Node.js 和 MongoDB 开发的社区系统：https://github.com/cnodejs/nodeclub
+4，node.js+express+mongodb 小电商项目实战：https://github.com/18820227745/shop-demo-node
