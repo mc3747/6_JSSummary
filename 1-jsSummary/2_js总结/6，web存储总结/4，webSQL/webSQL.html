@@ -1,0 +1,28 @@
+<!-- 在js中使用SQLLite数据的demo -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="webSQL.js"></script>
+</head>
+<body onload="init()">
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>留言：</td>
+            <td><input type="text" id="memo"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="保存" onclick="saveData()"></td>
+            <td><input type="button" value="删除某个表" onclick="dropTable()"></td>
+        </tr>
+    </table>
+<hr>
+<table border="1" id="datatable"></table>
+    <p id="msg"></p>
+</body>
+</html>

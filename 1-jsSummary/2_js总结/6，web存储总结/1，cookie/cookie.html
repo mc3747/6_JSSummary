@@ -1,0 +1,43 @@
+<!-- 
+cookie中需要包含的字段：
+Expires：cookie最长有效期
+Max-Age： 在 cookie 失效之前需要经过的秒数。秒数为 0 或 -1 将会使 cookie 直接过期。
+Domain： 指定 cookie 可以送达的主机名。
+Path： 指定一个 URL 路径，这个路径必须出现在要请求的资源的路径中才可以发送 Cookie 首部。
+Secure： 一个带有安全属性的 cookie 只有在请求使用SSL和HTTPS协议的时候才会被发送到服务器。
+HttpOnly： 设置了 HttpOnly 属性的 cookie 不能使用 JavaScript 经由 Document.cookie属性、XMLHttpRequest 和Request APIs 进行访问，以防范跨站脚本攻击 。
+SameSite =Strict | Lax ： 允许服务器设定一则 cookie 不随着跨域请求一起发送，这样可以在一定程度上防范跨站请求伪造攻击。 
+ -->
+ <!-- 
+ 设置和获取cookie的方法：
+  ✅方法1：直接设置
+  ✅方法2：抽象成工具类
+  ✅方法3：第三方，如js-cookie
+  -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="./cookieTool.js">
+		</script>
+	</head>
+	<body>
+	</body>
+	
+	<!-- ✅方法1： -->
+<!-- 	<script>
+	    var now = new Date();
+	    var expires = now.getTime() + 1000 * 60;
+	    now.setTime(expires);
+	    document.cookie = 'token=9527;' + 'expires=' + now.toUTCString();
+	    document.cookie.split(';');
+	</script> -->
+	
+	<!-- ✅方法2： -->
+	<script type="text/javascript">
+		CookieUtil.set('aaa','111',null,null,null,null);
+
+	</script>
+	
+</html>

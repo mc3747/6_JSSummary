@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" name="" value="页面跳转" onclick="set()" />
+	</body>
+</html>
+<script>
+	function set() {
+		//由于是一个新的技术，你可以通过下面的代码检测你的浏览器是否支持 
+		if (window.localStorage) {
+			//存储变量的值 
+			localStorage.name = '✅格格';
+			location.href = './page2.html';
+		} else {
+			alert("NOT SUPPORT");
+		}
+	}
+</script>

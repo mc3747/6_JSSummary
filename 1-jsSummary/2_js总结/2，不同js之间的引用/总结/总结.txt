@@ -1,0 +1,17 @@
+✅ js常用的几个标准：
+
+1,es标准
+
+2，CommonJS标准：模块化，主要用于后端
+CommonJS定义的模块分为:{模块引用(require)} {模块定义(exports)} {模块标识(module)}
+应用：node.js ,webpack
+
+3，AMD标准：异步模块定义：Asynchronous Module Definition
+RequireJS：是一个AMD框架，可以异步加载JS文件
+
+4，CMD标准
+是SeaJS在推广过程中对模块定义的规范化产出
+SeaJS是CMD概念的一个实现
+SeaJS是淘宝团队提供的一个模块开发的js框架.
+
+✅，

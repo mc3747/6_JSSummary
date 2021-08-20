@@ -1,0 +1,14 @@
+1，新建目录es5和es6，在es6中创建一个index.js,写一点要转换的es6代码；
+2，初始化项目：在最外层目录，使用npm  init ；
+3，安装babel：最外层目录,使用npm install -g babel-cli
+4，安装转换包：最外层目录，使用npm install --save-dev babel-preset-es2015 babel-cli
+5，新建.babelrc文件，最外层目录，其中写入代码
+	{
+		"presets":["es2015"],
+		"plugins":[]
+	}
+6,package.json中，写自动转换脚本
+	 "scripts": {
+	    "build":"babel es6 --out-dir es5"
+	},
+7，自动编译：最外层目录 ，npm run build
