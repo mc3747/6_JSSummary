@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <input type="button" value="加载新文档" onclick="newDoc()">
+        <input type="button" value="前进" onclick="goForward()">
+        <input type="button" value="后退" onclick="goBack()">
+        <div id="example" style="background-color:rosybrown"></div>
+        <input type="button" onclick="myFunction1()" value="显示警告框">
+        <input type="button" onclick="myFunction2()" value="显示确认框">
+        <input type="button" onclick="myFunction3()" value="显示提示框">
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <button onclick="myFunction4()">启动循环计时</button>
+        <button onclick="myFunction5()">停止循环计时</button>
+        <button onclick="myFunction6()">启动延时计时</button>
+        <button onclick="myFunction7()">停止延时计时</button>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+        <p id="demo10"></p>
+        <p id="demo11"></p>
+<script>
+/*1,当前浏览器的实际宽度和高度*/
+    var w=window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+    var h=window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    x=document.getElementById("demo");
+    x.innerHTML="浏览器window宽度: " + w + ", 高度: " + h + "。"
+
+/*2,当前浏览器的可用宽度和高度*/
+    document.write("可用宽度: " + screen.availWidth);
+    document.write("可用高度: " + screen.availHeight);
+
+/*3,window.location：在编写时可不使用 window 这个前缀*/
+    //location.href 属性返回当前页面的 URL。
+    demo1=document.getElementById("demo1");
+    demo1.innerHTML = '当前页面URL：'+ decodeURI(location.href);
+
+    //location.protocol 返回所使用的 web 协议（http:// 或 https://）
+    demo2=document.getElementById("demo2");
+    demo2.innerHTML = '当前页面的协议：'+ decodeURI(location.protocol);
+
+    //location.hostname 返回 web 主机的域名
+    demo3=document.getElementById("demo3");
+    demo3.innerHTML = '当前页面的主机名：'+ decodeURI(location.hostname);
+
+    //location.pathname 属性返回 URL 的路径名
+    demo4=document.getElementById("demo4");
+    demo4.innerHTML = '当前页面的文件路径：'+ decodeURI(location.pathname);
+
+    //location.port 返回 web 主机的端口 （80 或 443）
+    demo5=document.getElementById("demo5");
+    demo5.innerHTML = '当前页面的文件主机端口：'+ decodeURI(location.port);
+   
+    //location.assign() 方法加载新的文档。
+    function newDoc(){
+	    window.location.assign("http://www.w3cschool.cc")
+}
+
+/*4,Window History,在编写时可不使用 window 这个前缀*/
+    function goBack()
+        {
+            window.history.back();
+            // 或者以下方法：
+            // history.go(-1);
+        }
+    function goForward()
+        {
+            window.history.forward();
+            // 或者以下方法：
+            // history.go(1); 
+        }
+
+ /*5,window.navigator 对象包含有关访问者浏览器的信息*/
+        txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>";
+        txt+= "<p>浏览器名称: " + navigator.appName + "</p>";
+        txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>";
+        txt+= "<p>启用Cookies: " + navigator.cookieEnabled + "</p>";
+        txt+= "<p>硬件平台: " + navigator.platform + "</p>";
+        txt+= "<p>用户代理: " + navigator.userAgent + "</p>";
+        txt+= "<p>用户代理语言: " + navigator.systemLanguage + "</p>";
+        document.getElementById("example").innerHTML=txt;
+
+        function myFunction1()
+        {
+            alert("你好，我是一个警告框！");
+        }
+        function myFunction2()
+        {
+           var x;
+           var r = confirm("你好，我是一个确认框！");
+            if (r==true){
+                x="你按下了\"确定\"按钮!";
+            }
+            else{
+                x="你按下了\"取消\"按钮!";
+            };
+            document.getElementById("demo6").innerHTML=x;
+        }
+        function myFunction3()
+        {
+            var person=prompt("你好，我是一个提示框框！","Harry Potter");
+            if (person!=null && person!="")
+            {
+                x="你好 " + person + "! 今天感觉如何?";
+                document.getElementById("demo7").innerHTML=x;
+            }
+        }
+
+ /*5,JavaScript 计时事件*/
+//setInterval() - 间隔指定的毫秒数不停地执行指定的代码。
+
+var myVar1 = setInterval(function(){},1000);
+        function myFunction4()
+        {
+            myVar1 = setInterval(function(){
+                var d=new Date();
+                var t=d.toLocaleTimeString();
+                document.getElementById("demo8").innerHTML=t;
+            },1000);
+        }
+        function myFunction5()
+        {
+            clearInterval(myVar1);
+        }
+
+        
+//setTimeout() - 在指定的毫秒数后执行指定代码。
+        function myFunction6()
+        {
+           var myVar2= setTimeout(function(){alert("Hello")},3000);
+        }
+        function myFunction7()
+        {
+            clearTimeout(myVar2);
+        }
+
+</script>
+
+</body>
+</html>

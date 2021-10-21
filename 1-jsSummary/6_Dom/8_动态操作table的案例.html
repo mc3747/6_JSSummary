@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			table{
+			border:1px solid #ddd;
+			border-collapse: collapse;
+			width:100%;
+			margin-top: 20px;
+		}
+		td{
+			border:1px solid #ddd;
+			padding:3px 5px;
+		}
+		.odd{background-color: #199;}
+	</style>
+	</head>
+
+	<body>
+		<label for="row">请输入行数：</label><input type="text" id="row">
+		<label for="col">请输入列数：</label><input type="text" id="col">
+		<button class="btn">动态生成表格</button>
+		<div id="output"></div>
+	</body>
+</html>
+<script type="text/javascript">
+	/*00-监听页面的加载*/
+	window.onload = function() {
+
+		/*01-获取页面中指定的元素*/
+		var oRow = document.getElementById('row');
+		var oCol = document.getElementById('col');
+		var oOutput = document.getElementById('output');
+		var oBtn = output.previousElementSibling;
+
+		/*02-注册按钮的点击事件*/
+		oBtn.onclick = function() {
+			/*03-获取用户输入的行-列信息*/
+			var _row = oRow.value,
+				_col = oCol.value;
+
+			/*04-创建表格标签*/
+			var table = document.createElement('table');
+			var tbody = document.createElement('tbody');
+
+			/*05-根据行数来动态的创建tr标签并添加到tbody标签中*/
+			for (var i = 0; i < _row; i++) {
+				var tr = document.createElement('tr');
+
+				/*设置隔行换色*/
+				if (i % 2 === 0) tr.className = 'odd';
+
+				tbody.appendChild(tr);
+
+				/*06-根据列数来动态创建rd标签并添加到tr标签中*/
+				for (var j = 0; j < _col; j++) {
+					var td = document.createElement('td');
+					td.innerHTML = '单元格 - ' + i + j;
+					tr.appendChild(td);
+				}
+			}
+
+			/*07-把表格插入到页面中显示出来*/
+			table.appendChild(tbody);
+			oOutput.innerHTML = ''; // 添加前先清空#output
+			oOutput.appendChild(table);
+		}
+	}
+</script>

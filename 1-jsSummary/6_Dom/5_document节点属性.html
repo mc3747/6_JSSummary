@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>可乐</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	/*
+1，document节点对象代表整个文档，每张网页都有自己的document对象。window.document属性就指向这个对象。只要浏览器开始载入 HTML 文档，该对象就存在了，可以直接使用。
+2，document对象有不同的办法可以获取。
+	1，正常的网页，直接使用document或window.document。
+	2，iframe框架里面的网页，使用iframe节点的contentDocument属性。
+	3，Ajax 操作返回的文档，使用XMLHttpRequest对象的responseXML属性。
+	4，内部节点的ownerDocument属性。
+3，document对象继承了EventTarget接口、Node接口、ParentNode接口。这意味着，这些接口的方法都可以在document对象上调用。除此之外，document对象还有很多自己的属性和方法。
+	*/
+   
+// 🍎，1，快捷方式属性
+/*
+document.defaultView：返回document对象所属的window对象
+document.doctype：指向<DOCTYPE>节点，即文档类型（Document Type Declaration，简写DTD）节点
+document.documentElement：根元素
+document.head：head
+document.body：body
+document.scrollingElement：滚动元素
+document.activeElement：获取焦点元素，通常，这个属性返回的是<input>、<textarea>、<select>等表单元素
+document.fullscreenElement：以全屏状态展示的 DOM 元素，如<video>元素
+*/ 
+console.log( document.defaultView)
+console.log(document.doctype)
+console.log( document.documentElement)
+console.log( document.head)
+console.log( document.body)
+
+// 🍎，2，节点集合属性:返回一个HTMLCollection实例，表示文档内部特定元素的集合。这些集合都是动态的，原节点有任何变化，立刻会反映在集合中
+/*
+document.links：返回当前文档所有设定了href属性的<a>及<area>节点
+document.forms：返回所有<form>表单节点
+document.images：所有<img>图片节点
+document.embeds，document.plugins：嵌入动画或者插件
+document.scripts：脚本
+document.styleSheets：样式表
+总结：
+例如var forms = document.forms;
+<form name="myForm">
+1，id或者name来引用:forms.myForm
+2，使用item（）：forms.item[0];
+3, 使用namedItem（）：forms.nameItems['myForm'];
+length
+*/ 
+// 🍎，3，文档静态信息属性
+/*
+1,document.documentURI，document.URL:documentURI继承自Document接口，可用于所有文档；URL继承自HTMLDocument接口，只能用于 HTML 文档,返回值一样
+2，document.domain：域名
+3，document.location：location对象
+4，document.lastModified：最后修改时间
+5，document.title：当前文档的标题
+6，document.characterSet：返回当前文档的编码
+7，document.referrer：返回一个字符串，表示当前文档的访问者来自哪里
+8，document.dir：表示文字方向。它只有两个可能的值：rtl表示文字从右到左，阿拉伯文是这种方式；ltr表示文字从左到右，包括英语和汉语在内的大多数文字采用这种方式
+document.compatMode：，可能的值为BackCompat（向后兼容模式）和CSS1Compat（严格模式）。
+一般来说，如果网页代码的第一行设置了明确的DOCTYPE（比如<!doctype html>），document.compatMode的值都为CSS1Compat
+*/ 
+console.log(decodeURIComponent(document.documentURI))
+console.log(decodeURIComponent(document.URL))
+console.log( document.domain)
+console.log( document.location)
+console.log( document.lastModified)
+console.log( document.title)
+console.log( document.characterSet)
+console.log(decodeURIComponent(document.referrer))
+console.log( document.dir)
+console.log( document.compatMode)
+// 🍎，4，文档状态属性
+/*
+1，document.hidden：窗口是否可见
+2，document.visibilityState：文档的可见状态
+	visible：页面可见。注意，页面可能是部分可见，即不是焦点窗口，前面被其他窗口部分挡住了。
+	hidden：页面不可见，有可能窗口最小化，或者浏览器切换到了另一个 Tab。
+	prerender：页面处于正在渲染状态，对于用户来说，该页面不可见。
+	unloaded：页面从内存里面卸载了
+3,document.readyState:
+	loading：加载 HTML 代码阶段（尚未完成解析）
+	interactive：加载外部资源阶段
+	complete：加载完成
+*/ 
+console.log( document.hidden)
+console.log( document.visibilityState)
+console.log( document.readyState)
+// 🍎，5，document.cookie
+console.log( document.cookie)
+
+// 🍎，6，document.designMode
+console.log( document.designMode)
+
+// 🍎，7，document.implementation
+/*
+该对象有三个方法，主要用于创建独立于当前文档的新的 Document 对象。
+
+DOMImplementation.createDocument()：创建一个 XML 文档。
+DOMImplementation.createHTMLDocument()：创建一个 HTML 文档。
+DOMImplementation.createDocumentType()：创建一个 DocumentType 对象。
+*/ 
+console.log( document.implementation)
+</script>

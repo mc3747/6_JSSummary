@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<p>如果你点我，我就会消失。</p>
+		<p>点我消失!</p>
+
+		<div class="box">我的class是box</div>
+		<div id="box">我的id是box</div>
+
+	</body>
+
+</html>
+
+<script type="text/javascript">
+	/*
+				✅ 1，选择器：
+				1，元素选择器： 	$("button")
+				2，id 选择器：	$("#test")
+				3，class 选择器： $(".test")
+				其他：
+				$("#id", ".class")  复合选择器
+				$(div p span)       层级选择器 //div下的p元素中的span元素
+				$(div>p)            父子选择器 //div下的所有p元素
+				$(div+p)            相邻元素选择器 //div后面的p元素(仅一个p)
+				$(div~p)            兄弟选择器  //div后面的所有p元素(同级别)
+				$(.p:last)          类选择器 加 过滤选择器  第一个和最后一个（first 或者 last）
+				$("#mytable td:odd")      层级选择 加 过滤选择器 奇偶（odd 或者 even）
+				$("div p:eq(2)")    索引选择器 div下的第三个p元素（索引是从0开始）
+				$("a[href='www.baidu.com']")  属性选择器
+				$("p:contains(test)")        // 内容过滤选择器，包含text内容的p元素
+				$(":emtyp")        //内容过滤选择器，所有空标签（不包含子标签和内容的标签）parent 相反
+				$(":hidden")       //所有隐藏元素 visible 
+				$("input:enabled") //选取所有启用的表单元素
+				$(":disabled")     //所有不可用的元素
+				$("input:checked") //获取所有选中的复选框单选按钮等
+				$("select option:selected") //获取选中的选项元素
+				
+				 ✅ 2，事件：
+				 1，$(document).ready()
+				 2，click()
+				 3，dblclick()
+				 4，mouseenter()：鼠标通过
+				 5，mouseleave()：鼠标离开
+				 6，mousedown()：鼠标按下
+				 7，mouseup()：鼠标松开
+				 8，hover()：悬停
+				 9，focus()：获取焦点
+				 10，blur()：失去焦点
+				*/
+	/*
+	 ✅ 入口的3种写法
+	// 入口函数写法1:文档加载完毕
+		$(document).ready(function() {
+			console.log('加载完毕1')
+		});
+		// 入口函数写法2:文档加载完毕
+		$(function() {
+			console.log('加载完毕2')
+		});
+		// 入口函数写法3:文档和图片加载完毕
+		$(window).ready(function() {
+			console.log('加载完毕3')
+		})
+		
+	✅ jQuery入口函数与js入口函数的区别：
+		区别一：书写个数不同：
+		Js 的入口函数只能出现一次，出现多次会存在事件覆盖的问题。
+		jQuery 的入口函数，可以出现任意多次，并不存在事件覆盖问题。
+		区别二：执行时机不同：
+		Js的入口函数是在所有的文件资源加载完成后，才执行。这些文件资源包括：页面文档、外部的js文件、外部的css文件、图片等。
+		jQuery的入口函数，是在文档加载完成后，就执行。文档加载完成指的是：DOM树加载完成后，就可以操作DOM了，不用等到所有的外部资源都加载完成。
+		
+		文档加载的顺序：从上往下，边解析边执行。
+	✅ 	符号$ 代表的就是 jQuery
+		
+	*/
+
+	//通过 id 获取单个元素
+	var myBox = document.getElementById("box");
+
+	// jQuery获取的都是数组
+	var jqBox1 = $("#box");
+	console.log(myBox);
+	console.log(jqBox1);
+
+	// jQuery对象 转为 DOM 对象：jquery对象[index],可以调用dom的方法
+	jqBox1[0].style.backgroundColor = "green";;
+
+	$(document).ready(function() {
+		$("p").click(function() {
+			$(this).hide();
+		});
+	});
+</script>

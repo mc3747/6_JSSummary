@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Load</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <style>
+        .bg {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <img class="bg" src="http://img4.imgtn.bdimg.com/it/u=2853553659,1775735885&fm=26&gp=0.jpg" alt="" srcset="">
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '你好前端小课'
+            }
+        });
+</script>
+<script>
+        $.ajax({
+            method: "GET",
+            url: "http://127.0.0.1/PoweredByMacOSX",
+            data: { name: "John", location: "Boston" }
+        }).done(function (msg) {
+            alert("Data Saved: " + msg);
+        });
+</script>
+</body>
+
+</html>

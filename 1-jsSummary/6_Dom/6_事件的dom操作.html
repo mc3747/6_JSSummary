@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+<meta charset="utf-8"> 
+<title>事件的dom操作</title> 
+</head>
+
+<body onload="checkCookies()">
+
+<button onclick="displayDate()">1，执行事件显示日期</button>
+<button id="myBtn">2，分配事件显示日期</button>
+<p>
+        输入离开后显示大写: 
+        <input type="text" id="input" onchange="myFunction()">
+</p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">鼠标放在我上边</div>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" onclick="mClick(this)" 
+style="background-color:rgb(217, 56, 190);width:120px;height:20px;padding:40px;">鼠标点击我</div>
+
+<button id="myBtn2">添加事件句柄1</button>
+<button id="myBtn3">添加事件句柄2</button>
+<button id="myBtn4">同一个元素添加多个不同事件</button>
+<button id="myBtn5">事件传递参数</button>
+<div id="myDiv" style="background-color:aquamarine">
+	<p id="myP">冒泡演示：先内后外</p>
+</div><br>
+<div id="myDiv2" style="background-color:gold;">
+	<p id="myP2">捕获演示：先外后内 </p>
+</div>
+
+<script>
+        // 1，onClick事件
+    function displayDate(){
+        document.getElementById("demo").innerHTML=Date();
+    }
+    document.getElementById("myBtn").onclick=function(){displayDate()};
+    
+        // 2，onload 和 onunload 事件
+    function checkCookies(){
+        if (navigator.cookieEnabled==true){
+            alert("Cookies 可用")
+        }
+        else{
+            alert("Cookies 不可用")
+        };
+    }
+        // 3，onchange 事件
+    function myFunction(){
+        var x=document.getElementById("input");
+        x.value=x.value.toUpperCase();
+        };
+
+        //4， onmouseover 和 onmouseout 事件
+        function mOver(obj){
+	    obj.innerHTML="Thank You"
+        }
+        function mOut(obj){
+	    obj.innerHTML="Mouse Over Me"
+        }
+    
+        //5， onmousedown、onmouseup 以及 onclick 事件
+        function mDown(obj){
+	        obj.style.backgroundColor = 'red';
+        }
+        function mUp(obj){
+            obj.style.backgroundColor = 'yellow';
+        }
+        function mClick(obj){
+            obj.style.backgroundColor = 'blue';
+        }
+        // 6，添加事件句柄1：直接写在语句中
+        document.getElementById("myBtn2").addEventListener("click", function(){
+    alert("Hello World!");});
+
+        // 7，添加事件句柄1：写在函数中
+        document.getElementById("myBtn3").addEventListener("click", myFunction2);
+        function myFunction2() {
+            alert ("Hello World!");
+        }
+
+        // 8，同一个元素添加多个不同的事件：按下不能和click，抬起共存
+        var x3 = document.getElementById("myBtn4");
+        // x3.addEventListener("mousedown", myFirstFunction);
+        x3.addEventListener("click", mySecondFunction);
+        x3.addEventListener("mouseup", myThirdFunction);
+        function myFirstFunction() {
+            document.getElementById("demo2").innerHTML += "Moused down!<br>"
+        };
+        function mySecondFunction() {
+            document.getElementById("demo2").innerHTML += "Clicked!<br>"
+        };
+        function myThirdFunction() {
+            document.getElementById("demo2").innerHTML += "Moused out!<br>"
+        };
+
+          // 8，向 Window 对象添加事件句柄
+          window.addEventListener("resize", function(){
+            document.getElementById("demo3").innerHTML = 'asdfasd';
+        });
+
+        var p1 = 5;
+        var p2 = 7;
+        document.getElementById("myBtn5").addEventListener("click", function() {
+            myFunction3(p1, p2);
+        });
+        function myFunction3(a, b) {
+            var result = a * b;
+            document.getElementById("demo3").innerHTML = result;
+        }
+
+        /*
+        9，事件的冒泡：内部元素的事件会先被触发，然后再触发外部元素
+           事件的捕获，外部元素的事件会先被触发，然后才会触发内部元素的事件
+        */ 
+        document.getElementById("myP").addEventListener("click", function() {
+            alert("你点击了 P 元素!");
+        }, false);
+        document.getElementById("myDiv").addEventListener("click", function() {
+            alert(" 你点击了 DIV 元素 !");
+        }, false);
+        document.getElementById("myP2").addEventListener("click", function() {
+            alert("你点击了 P2 元素!");
+        }, true);
+        document.getElementById("myDiv2").addEventListener("click", function() {
+            alert("你点击了 DIV2 元素 !");
+        }, true);
+
+        
+</script>
+</body>
+</html>

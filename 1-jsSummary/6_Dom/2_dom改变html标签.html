@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2_dom改变html标签</title>
+</head>
+<body>
+    <p id="p1">1—改变内容</p>
+    <img src="" alt="" id="p2">
+    <script>
+        
+
+        var element1=document.getElementById("p1");
+        element1.innerHTML="1—改变内容：innerHTML";
+        
+        var element2=document.getElementById("p2");
+        element2.src = "http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg"
+
+        document.write('3—改变html输出流：document.write');
+
+
+    </script>
+</body>
+</html>

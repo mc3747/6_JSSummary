@@ -1,0 +1,54 @@
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    </head>
+    <body>
+    
+    <div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另外一个段落。</p>
+    </div>
+     
+    <script>
+/*1,创建新的 HTML 元素 (节点) - appendChild()*/
+        //为 <p> 元素添加文本节点：
+        var para = document.createElement("p");
+        //将文本节点添加到 <p> 元素中：
+        var node = document.createTextNode("这是一个新的段落1。");
+        //最后，在一个已存在的元素中添加 p 元素。
+        para.appendChild(node);
+        //最后，在一个已存在的元素中添加 p 元素。查找已存在的元素：
+        var element = document.getElementById("div1");
+        //最后，在一个已存在的元素中添加 p 元素。添加到已存在的元素中:
+        element.appendChild(para);
+
+/*2,创建新的 HTML 元素 (节点) - insertBefore() */
+        var para1 = document.createElement("p");
+        var node1 = document.createTextNode("这是一个新的段落2。");
+        para1.appendChild(node1);
+        var element1 = document.getElementById("div1");
+        var child1 = document.getElementById("p1");
+        element1.insertBefore(para1, child1);   
+        
+/*3,移除已存在的元素 - removeChild()*/
+        //查找 id="div1" 的元素:
+        var parent = document.getElementById("div1");
+        //查找 id="p1" 的 <p> 元素:
+        var child = document.getElementById("p1");
+        //从父元素中移除子节点：
+        parent.removeChild(child);
+
+/*4，替换 HTML 元素 - replaceChild()*/
+        var para2 = document.createElement("p");
+        var node2 = document.createTextNode("这是一个新的段落3。");
+        para2.appendChild(node2);
+        
+        var parent2 = document.getElementById("div1");
+        var child2 = document.getElementById("p2");
+        parent.replaceChild(para2, child2);
+
+        
+    </script>
+    
+    </body>
+    </html>

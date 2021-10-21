@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_dom获取html标签</title>
+</head>
+<body>
+    <div id="A">1，根据id(返回唯一)</div>
+    <p>2，根据标签名(返回数组)</p>
+    <div class="B">3，根据class(返回数组)</div>
+    <script>
+        var x=document.getElementById("A");
+        document.write("获取结果 " + x.innerHTML + "</p>");
+
+        var y=document.getElementsByTagName("p");
+        document.write("获取结果 " + y[0].innerHTML + "</p>");
+
+        var z = document.getElementsByClassName("B")
+        document.write("获取结果 " + z[0].innerHTML + "</p>");
+
+    </script>
+</body>
+</html>

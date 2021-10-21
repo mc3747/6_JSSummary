@@ -1,0 +1,58 @@
+<!-- 
+🍎 网页中嵌入 JavaScript 代码，主要有4种方法。
+1，<script>元素直接嵌入代码。
+2，<script>标签加载外部脚本：静态导入和动态生成
+3，事件属性
+4，URL 协议 
+ -->
+
+<!-- 
+  防止下载阻塞网页渲染的问题：
+  defer 属性
+  async 属性
+  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!-- 🍎 3，事件属性 -->
+		<button id="myBtn" onclick="console.log('我是事件属性')">点击</button>
+
+		<!-- 🍎 4，url协议 -->
+		<a href="javascript:console.log('我是url协议')">点击</a>
+
+	</body>
+</html>
+
+<!-- 🍎 1，内部脚本 -->
+<script type="text/javascript">
+	console.log('我是内部脚本')
+</script>
+
+<!-- 🍎 2，外部脚本：静态导入 -->
+<script type="text/javascript" src="outJs.js">
+
+</script>
+<!-- 🍎 2，外部脚本：动态生成 -->
+<script type="text/javascript">
+	
+	function loadScript(src, done) {
+		var js = document.createElement('script');
+		js.src = src;
+		js.onload = function() {
+			done();
+		};
+		js.onerror = function() {
+			done(new Error('Failed to load script ' + src));
+		};
+		document.head.appendChild(js);
+	}
+	loadScript('./dynamicJs.js',function(){
+		console.log('动态生成脚本后的回调');
+	})
+</script>
