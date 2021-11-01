@@ -1,34 +1,4 @@
-//函数声明的3种方式
-//✅ 1，function命令
-function print1(s) {
-	console.log(s);
-}
-//✅ 2，函数匿名表达式
-var print2 = function(s) {
-	console.log(s);
-};
-//✅ 3，函数声明表达式
-//好处：一是可以在函数体内部调用自身，二是方便除错
-var print3 = function f(s) {
-	console.log(s);
-	console.log(f);
-};
-//✅ 4，Function 构造函数
-var print4 = new Function(
-	'x',
-	'y',
-	'return x + y'
-);
-console.log(print4(4,5));
 
-//✅函数的递归:（recursion）。
-//计算斐波那契数列的代码:num表示第几个元素
-function fib(num) {
-	if (num === 0) return 0;
-	if (num === 1) return 1;
-	return fib(num - 2) + fib(num - 1);
-}
-console.log(fib(8));
 
 //🍎函数作为变量
 function add(x, y) {

@@ -12,6 +12,7 @@ var f2 = function(a, b) {
 };
 var f3 = new Function("a", "b", "return a + b");
 console.log('✅' + f3(2,3));
+
 /*
 ✅，2，函数的4种调用方式：
 ① 普通函数调用模式
@@ -54,41 +55,4 @@ function f5() {
 	f4.call(o2, 3, 4);
 }
 
-/*
-✅，3，函数具有的默认属性和方法
-默认属性
-1，this
-2，arguments：参数数组
-3，length参数个数
-4，name函数名称
-默认方法：
-1，toString：返回函数整体字符串
-2，apply
-3，call
-*/
-const myFunction7 = ()=>{
-	console.log("7箭头函数常量");
-}
-function f6(a,b)
-{
-	// arguments是个参数数组列表，
-    console.log("8函数的默认参数");
-	console.log(arguments[0]+'参数列表');
-	console.log(arguments.length+'参数个数');
-	// name：函数名称
-	console.log(myFunction7.name+'函数的名称');
-	// length，参数个数
-	console.log(myFunction7.length+'参数的个数');
-	// toString（），方法作为字符串返回
-	console.log(myFunction7.toString+'函数作为字符串返回');
-	console.log(myFunction7.toString()+'函数作为字符串返回');
-}
-function f7(a,b=3){
-	// ⚠🍉默认参数只能通过显示参数a，b访问，通过参数列表只能访问传入的值
-	console.log(arguments[0]+'参数列表');
-	console.log(arguments[1]+'参数列表');
-	console.log(b+'参数b');
-}
-f6(5, 6);
-f7(5, 6);
 
