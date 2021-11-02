@@ -1,3 +1,13 @@
+/*
+异步操作：
+1，回调
+2，事件的监听
+3，事件的发布和订阅
+4，promise
+5，Generator函数
+6，async 函数
+*/
+
 //✅，1，回调函数写法：函数f1执行完，再执行f2
 function f1(callback) {
 	console.log('我是f1前');
