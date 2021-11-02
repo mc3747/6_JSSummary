@@ -49,7 +49,7 @@ forEachDemo(){
 	    console.log(array)    // [1, 2, 3, 4, 5, 6]
 	})
 }
-// 🍎 5,map
+// 🍎 5,map：有返回值
 mapDemo(){
 	var arr = [1, 2, 3, 4, 5, 6]
 	var newArr = arr.map(function (item, idnex) {
